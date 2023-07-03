@@ -1,45 +1,65 @@
+function showmusic(){
+    $("#music_container").css("display","inherit");
+    $("#music_container").addClass("animated slideInLeft");
+    setTimeout(function(){
+        $("#music_container").removeClass("animated slideInLeft");
+    },800);
+}
+function closemusic(){
+    $("#music_container").addClass("animated slideOutLeft");
+    setTimeout(function(){
+        $("#music_container").removeClass("animated slideOutLeft");
+        $("#music_container").css("display","none");
+    },800);
+}
+
+
+function showmerch(){
+    $("#merch_container").css("display","inherit");
+    $("#merch_container").addClass("animated slideInLeft");
+    setTimeout(function(){
+        $("#merch_container").removeClass("animated slideInLeft");
+    },800);
+}
+function closemerch(){
+    $("#merch_container").addClass("animated slideOutLeft");
+    setTimeout(function(){
+        $("#merch_container").removeClass("animated slideOutLeft");
+        $("#merch_container").css("display","none");
+    },800);
+}
+
+function showteach(){
+    $("#teach_container").css("display","inherit");
+    $("#teach_container").addClass("animated slideInRight");
+    setTimeout(function(){
+        $("#teach_container").removeClass("animated slideInRight");
+    },800);
+}
+function closeteach(){
+    $("#teach_container").addClass("animated slideOutRight");
+    setTimeout(function(){
+        $("#teach_container").removeClass("animated slideOutRight");
+        $("#teach_container").css("display","none");
+    },800);
+}
+
 function showabout(){
     $("#about_container").css("display","inherit");
-    $("#about_container").addClass("animated slideInLeft");
+    $("#about_container").addClass("animated slideInRight");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideInLeft");
+        $("#about_container").removeClass("animated slideInRight");
     },800);
 }
 function closeabout(){
-    $("#about_container").addClass("animated slideOutLeft");
+    $("#about_container").addClass("animated slideOutRight");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideOutLeft");
+        $("#about_container").removeClass("animated slideOutRight");
         $("#about_container").css("display","none");
     },800);
 }
-function showwork(){
-    $("#work_container").css("display","inherit");
-    $("#work_container").addClass("animated slideInRight");
-    setTimeout(function(){
-        $("#work_container").removeClass("animated slideInRight");
-    },800);
-}
-function closework(){
-    $("#work_container").addClass("animated slideOutRight");
-    setTimeout(function(){
-        $("#work_container").removeClass("animated slideOutRight");
-        $("#work_container").css("display","none");
-    },800);
-}
-function showcontact(){
-    $("#contact_container").css("display","inherit");
-    $("#contact_container").addClass("animated slideInUp");
-    setTimeout(function(){
-        $("#contact_container").removeClass("animated slideInUp");
-    },800);
-}
-function closecontact(){
-    $("#contact_container").addClass("animated slideOutDown");
-    setTimeout(function(){
-        $("#contact_container").removeClass("animated slideOutDown");
-        $("#contact_container").css("display","none");
-    },800);
-}
+
+
 setTimeout(function(){
     $("#loading").addClass("animated fadeOut");
     setTimeout(function(){

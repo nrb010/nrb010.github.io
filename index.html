@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="index.css">
 </head>
+<style>
+    body {
+        background-image: url('MAIN.jpeg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+    }
+</style>
 <body>
+    
     <div id="loading">
         <div id="spinner"></div>
     </div>
@@ -24,80 +34,116 @@
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
         <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
     </div>
+    <a id="music" onclick="showmusic()" class="animated fadeIn" style="animation-delay:2.2s;">music</a>
+    <a id="merch" onclick="showmerch()" class="animated fadeIn" style="animation-delay:2.2s;">merch</a>
+    <a id="teach" onclick="showteach()" class="animated fadeIn" style="animation-delay:2.2s;">teach</a>
     <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">about</a>
-    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">work</a>
-    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
     <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
         <h1>Nava Drops.</h1>
         <h2>Artist x Med Student</h2>
         <div id="menu">
+            <a onclick="showmusic()">music</a>
+            <a onclick="showmerch()">merch</a>
+            <a onclick="showteach()">teach</a>
             <a onclick="showabout()">about</a>
-            <a onclick="showwork()">work</a>
-            <a onclick="showcontact()">contact</a>
         </div>
         <table>
                 <tr>
-                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social", href="https://www.instagram.com/navadropsbarz/"><i class="fab fa-instagram"></i></a></td>
-                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" ,
+                            href="https://www.instagram.com/navadropsbarz/"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" ,
+                            href="https://soundcloud.com/navadropsbarz"><i class="fab fa-soundcloud"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" ,
+                            href="https://open.spotify.com/artist/7wd1mX8kur6u6AUG73B1wu?si=CDRBLEjvTOq7B2WXS23v2w
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "><i
+                                class="fab fa-spotify"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" ,
+                            href="https://music.apple.com/us/artist/nava-drops-barz/1469471146"><i class="fab fa-apple"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" ,
+                            href="https://www.youtube.com/@navadropsbarz3920/featured
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            "><i
+                                class="fab fa-youtube"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" , href="https://www.nba.com/nuggets"><i
+                                class="fab fa-dribbble"></i></a></td>
                 </tr>
         </table>
     </div>
-    <div id="work_container" class="container">
-        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
-        <h1>works.</h1>
+    <div id="music_container" class="container" style="background-image: url('MUSIC.jpeg'); background-position: center;">
+        <div onclick="closemusic()"><i class="fas fa-angle-left"></i></div>
+        <div style=" backdrop-filter: blur(8px);">
+            <h1>music.</h1>
         <section>
-            <h2>work title</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <div id="used">
-                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
-                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
-                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            <iframe width="400" height="250" src="https://www.youtube.com/embed/obh-txLnfTA">
+            </iframe>
+            <div>
+            
+                <table>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.2s;"><i class="fab fa-soundcloud"
+                                style="color:orange"></i>
+                        </td>
+                        <td><a style="text-decoration: none" , class="social" ,
+                                href="https://soundcloud.com/navadropsbarz">soundcloud</a></td>
+                    </tr>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.4s;"><i class="fab fa-spotify" style="color:green"></i>
+                        </td>
+                        <td><a style="text-decoration: none" , class="social" ,
+                                href="https://open.spotify.com/artist/7wd1mX8kur6u6AUG73B1wu?si=CDRBLEjvTOq7B2WXS23v2w">spotify</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.6s;"><i class="fab fa-apple"></i>
+                        </td>
+                        <td><a style="text-decoration: none" , class="social" ,
+                                href="https://music.apple.com/us/artist/nava-drops-barz/1469471146"> apple music</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="animated zoomIn" style="animation-delay:0.8s;"><i class="fab fa-youtube" style="color:red"></i>
+                        </td>
+                        <td><a style="text-decoration: none" , class="social" ,
+                                href="https://www.youtube.com/@navadropsbarz3920/featured">youtube</a></td>
+                    </tr>
+                </table>
             </div>
-            <button class="btn_one">button 1</button>
-            <button class="btn_two">button 2</button>
         </section>
+        </div>
     </div>
-    <div id="about_container" class="container">
-            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
-            <h1>about.</h1>
+    <div id="merch_container" class="container"
+        style="background-image: url('MERCH_blurred.JPG'); background-position: center;">
+        <div onclick="closemerch()"><i class="fas fa-angle-left"></i></div>
+        <div style=" backdrop-filter: blur(8px);">
+            <h1>merch.</h1>
+            <section>
+            <h2>buy my stuff</h2>
+            </section>
+        </div>
+        </div>
+        <div id="teach_container" class="container"
+            style="background-image: url('TEACH _very_blurred.JPG'); background-position: center;">
+            <div onclick="closeteach()"><i class="fas fa-angle-right"></i></div>
+            <div style=" backdrop-filter: blur(16px);">
+                <h1>teach.</h1>
+            <section>
+                <h2>coming soon</h2>
+            </section>
+        </div>
+        </div>
+        <div id="about_container" class="container" style="background-image: url('ABOUT.JPeG'); background-position: center;">
+            <div onclick="closeabout()"><i class="fas fa-angle-right"></i></div>
+            <div style=" backdrop-filter: blur(8px);">
+                <h1>about.</h1>
             <section>
                 <h2>about me</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-            </section>
-            <section>
-                <h2>skills</h2>
-                <p>
-                    i do eveything ;)
+                    Nava Drops is the multi-media brand of the various creative aspects of Nava Drops Barz, the solo hip-hop indie project
+                    of medical student Nava Barman.
                 </p>
             </section>
         </div>
-          <div id="contact_container" class="container">
-            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
-            <h1>contact.</h1>
-            <section>
-                <h2>contact me</h2>
-                <p>
-                    <form>
-                        <input type="text" placeholder="name" required>
-                        <input type="email" placeholder="email" required><br>
-                        <textarea placeholder="your message" required rows="5"></textarea><br>
-                        <button class="btn_one">send</button>
-                    </form> 
-                </p>
-            </section>
         </div>
-        <div id="footer">
-            Philadelphia, PA <br> <a href="https://github.com/nrb010">NavaDrops.</a>
-        </div>
+        
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
