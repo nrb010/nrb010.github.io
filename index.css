@@ -155,11 +155,16 @@ body {
     background:rgba(255,50,50,0.9);
     cursor:pointer;
 }
-#work:hover {
+#merch:hover {
     background:rgba(255,50,50,0.9);
     cursor:pointer;
 }
-#contact:hover {
+#music:hover {
+    background: rgba(255, 50, 50, 0.9);
+    cursor: pointer;
+}
+
+#teach:hover {
     background:rgba(255,50,50,0.9);
     cursor:pointer;
 }
