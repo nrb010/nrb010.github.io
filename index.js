@@ -1,14 +1,14 @@
 function showmusic(){
     $("#music_container").css("display","inherit");
-    $("#music_container").addClass("animated slideInLeft");
+    $("#music_container").addClass("animated fadeIn");
     setTimeout(function(){
-        $("#music_container").removeClass("animated slideInLeft");
+        $("#music_container").removeClass("animated fadeIn");
     },800);
 }
 function closemusic(){
-    $("#music_container").addClass("animated slideOutLeft");
+    $("#music_container").addClass("animated fadeOut");
     setTimeout(function(){
-        $("#music_container").removeClass("animated slideOutLeft");
+        $("#music_container").removeClass("animated fadeOut");
         $("#music_container").css("display","none");
     },800);
 }
@@ -16,45 +16,45 @@ function closemusic(){
 
 function showmerch(){
     $("#merch_container").css("display","inherit");
-    $("#merch_container").addClass("animated slideInLeft");
+    $("#merch_container").addClass("animated fadeIn");
     setTimeout(function(){
-        $("#merch_container").removeClass("animated slideInLeft");
+        $("#merch_container").removeClass("animated fadeIn");
     },800);
 }
 function closemerch(){
-    $("#merch_container").addClass("animated slideOutLeft");
+    $("#merch_container").addClass("animated fadeOut");
     setTimeout(function(){
-        $("#merch_container").removeClass("animated slideOutLeft");
+        $("#merch_container").removeClass("animated fadeOut");
         $("#merch_container").css("display","none");
     },800);
 }
 
 function showteach(){
     $("#teach_container").css("display","inherit");
-    $("#teach_container").addClass("animated slideInRight");
+    $("#teach_container").addClass("animated fadeIn");
     setTimeout(function(){
-        $("#teach_container").removeClass("animated slideInRight");
+        $("#teach_container").removeClass("animated fadeIn");
     },800);
 }
 function closeteach(){
-    $("#teach_container").addClass("animated slideOutRight");
+    $("#teach_container").addClass("animated fadeOut");
     setTimeout(function(){
-        $("#teach_container").removeClass("animated slideOutRight");
+        $("#teach_container").removeClass("animated fadeOut");
         $("#teach_container").css("display","none");
     },800);
 }
 
 function showabout(){
     $("#about_container").css("display","inherit");
-    $("#about_container").addClass("animated slideInRight");
+    $("#about_container").addClass("animated fadeIn");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideInRight");
+        $("#about_container").removeClass("animated fadeIn");
     },800);
 }
 function closeabout(){
-    $("#about_container").addClass("animated slideOutRight");
+    $("#about_container").addClass("animated fadeOut");
     setTimeout(function(){
-        $("#about_container").removeClass("animated slideOutRight");
+        $("#about_container").removeClass("animated fadeOut");
         $("#about_container").css("display","none");
     },800);
 }
