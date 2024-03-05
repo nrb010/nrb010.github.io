@@ -59,6 +59,21 @@ function closeabout(){
     },800);
 }
 
+function showtour(){
+    console.log("show tour called");
+    $("#tour_container").css("display","inherit");
+    $("#tour_container").addClass("animated slideInDown");
+    setTimeout(function(){
+        $("#tour_container").removeClass("animated slideInDown");
+    },800);
+}
+function closetour(){
+    $("#tour_container").addClass("animated slideOutDown");
+    setTimeout(function(){
+        $("#tour_container").removeClass("animated slideOutDown");
+        $("#tour_container").css("display","none");
+    },800);
+}
 
 setTimeout(function(){
     $("#loading").addClass("animated fadeOut");

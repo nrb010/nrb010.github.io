@@ -21,6 +21,18 @@
       background-size: cover;
       background-position: center;
     }
+    @keyframes blink {
+            0%, 50%, 100% {
+                opacity: 1;
+            }
+            25%, 75% {
+                opacity: 0;
+            }
+        }
+
+        .blinking-element {
+            animation: blink 2s infinite; /* Change '2s' to adjust the blinking speed */
+        }
 </style>
 
 <body>
@@ -28,14 +40,7 @@
     <div id="spinner"></div>
     </div>
     <div id="particles-js"></div>
-    <div id="box">
-    <div class="box1 onlywide animated bounceOutLeft" style="animation-delay: 1.7s"></div>
-    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1.8s"></div>
-    <div class="box2 onlywide animated bounceOutLeft" style="animation-delay: 1.9s"></div>
-    <div class="box2 animated bounceOutRight" style="animation-delay: 1.9s"></div>
-    <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1.8s"></div>
-    <div class="box2 onlywide animated bounceOutRight" style="animation-delay: 1.7s"></div>
-    </div>
+   
     <a id="music" onclick="showmusic()" class="animated fadeIn"
         style="animation-delay: 2.2s; text-shadow: 4px 4px 6px #000000">music</a>
     <a id="merch" onclick="showmerch()" class="animated fadeIn"
@@ -44,6 +49,8 @@
         style="animation-delay: 2.2s; text-shadow: 4px 4px 6px #000000">teach</a>
     <a id="about" onclick="showabout()" class="animated fadeIn"
         style="animation-delay: 2.2s; text-shadow: 4px 4px 6px #000000">about</a>
+    <a id="tour" onclick="showtour()" class = "blinking-element"
+        style="animation-delay: 2.5s; text-shadow: 4px 4px 6px #000000">tour</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2s">
         <h1>Nava Drops.</h1>
         <h2>Artist x Med Student</h2>
@@ -161,6 +168,22 @@
             </section>
             </div>
             </div>
+
+        </div>
+        <div id="tour_container" class="container" style="background-image: url('TOUR.JPG'); background-position: center;">
+            <div onclick="closetour()"><i class="fas fa-angle-right"></i></div>
+            <div style=" backdrop-filter: blur(8px);">
+                <h1>tour.</h1>
+            <section>
+                <div class="music-event">
+                    <p class="p-event">March 22, 2024</p>
+                    <p class="p-event">Milk Boy on South St., </p>
+                    <p class="p-event">Philadelphia, PA</p>
+                    <a class="event-a" href="https://www.eventbrite.com/e/nava-drops-barz-at-milkboy-south-st-tickets-851237774097?aff=oddtdtcreator">Get Tickets</a>
+                </div>
+            </section>
+        </div>
+    </div>
 
     <script src="index.js" type="text/javascript"></script>
     <script src="particles.js"></script>
