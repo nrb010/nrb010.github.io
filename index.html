@@ -21,18 +21,7 @@
       background-size: cover;
       background-position: center;
     }
-    @keyframes blink {
-            0%, 50%, 100% {
-                opacity: 1;
-            }
-            25%, 75% {
-                opacity: 0;
-            }
-        }
 
-        .blinking-element {
-            animation: blink 2s infinite; /* Change '2s' to adjust the blinking speed */
-        }
 </style>
 
 <body>
@@ -49,7 +38,7 @@
         style="animation-delay: 2.2s; text-shadow: 4px 4px 6px #000000">teach</a>
     <a id="about" onclick="showabout()" class="animated fadeIn"
         style="animation-delay: 2.2s; text-shadow: 4px 4px 6px #000000">about</a>
-    <a id="tour" onclick="showtour()" class = "blinking-element"
+    <a id="tour" onclick="showtour()" class ="animated fadeIn"
         style="animation-delay: 2.5s; text-shadow: 4px 4px 6px #000000">tour</a>
     <div id="middle" class="animated slideInDown" style="animation-delay: 2s">
         <h1>Nava Drops.</h1>
