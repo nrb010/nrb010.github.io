@@ -24,7 +24,13 @@
 
 </style>
 
-<body>
+<body onload="
+    if (window.location.search === '?tour') { showtour(); }
+    if (window.location.search === '?music') { showmusic(); }
+    if (window.location.search === '?teach') { showteach(); }
+    if (window.location.search === '?merch') { showmerch(); }
+    if (window.location.search === '?about') { showabout(); }
+">
     <div id="loading">
     <div id="spinner"></div>
     </div>
