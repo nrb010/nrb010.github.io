@@ -25,7 +25,6 @@
 </style>
 
 <body onload="
-    console.log(window.location.search);
     if (window.location.search === '?tour') { showtour(); }
     if (window.location.search === '?music') { showmusic(); }
     if (window.location.search === '?teach') { showteach(); }
@@ -80,11 +79,14 @@
         </table>
     </div>
     <div id="music_container" class="container" style="background-image: url('MUSIC.jpeg'); background-position: center">
-        <div onclick="closemusic()"><i class="fas fa-angle-left"></i></div>
+    <div onclick="closemusic()"><i class="fas fa-angle-left"></i></div>
     <div style="backdrop-filter: blur(8px)">
         <h1>music.</h1>
+        <div id="container" style="text-align:center; margin: 0 auto">
+            <img src="wanderlust_project_trans_cropped_2.png" width="100%" alt="" />
+        </div>
         <section>
-                <iframe width="350" height="250" src="https://www.youtube.com/embed/Ny-5sOI8Hm8" style="display:block; margin: 0 auto;">
+                <iframe width="350" height="250" src="https://www.youtube.com/embed/GGH5pB7BtlU" style="display:block; margin: 0 auto;">
                 </iframe>
                 <div>
             <table style="margin: auto;">
@@ -93,7 +95,7 @@
                     <i class="fab fa-soundcloud" style="color: orange"></i>
                 </td>
                 <td>
-                    <a style="text-decoration: none" , class="social" , href="https://soundcloud.com/navadropsbarz">soundcloud</a>
+                    <a style="text-decoration: none" , class="social" , href="https://on.soundcloud.com/ECoZKNyucmJKeTUM6">soundcloud</a>
                 </td>
                 </tr>
                 <tr>
@@ -102,7 +104,7 @@
                 </td>
                 <td>
                     <a style="text-decoration: none" , class="social" ,
-                        href="https://open.spotify.com/artist/7wd1mX8kur6u6AUG73B1wu?si=CDRBLEjvTOq7B2WXS23v2w">spotify</a>
+                        href="https://open.spotify.com/artist/6Gykt4RwitjpVEOfGBrOPD?si=7_1bmsRMRy66VDRr4kDhPQ">spotify</a>
                 </td>
                 </tr>
                 <tr>
@@ -111,7 +113,7 @@
                 </td>
                 <td>
                     <a style="text-decoration: none" , class="social" ,
-                        href="https://music.apple.com/us/artist/nava-drops-barz/1469471146">
+                        href="https://music.apple.com/us/album/wonderlust-project/1748958959">
                         apple music</a>
                 </td>
                 </tr>
@@ -121,7 +123,7 @@
                 </td>
                 <td>
                     <a style="text-decoration: none" , class="social" ,
-                        href="https://www.youtube.com/@navadropsbarz3920/featured">youtube</a>
+                        href="https://youtube.com/@navadropsmusic?si=ZDwttot-8bALvHZf">youtube</a>
                 </td>
                 </tr>
                 </table>
